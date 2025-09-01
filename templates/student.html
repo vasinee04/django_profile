@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}รายชื่อนักศึกษา - VASINEE webapp{% endblock %} 
+{% block content %}
+<div class="container">
+	<div class="card mb-4 p-4 text-center shadow hero-section">
+		<div class="d-flex justify-content-center align-items-center mb-3" style="min-height: 10px"></div>
+		<h2 class="hero-title mb-2"
+				style="font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--pink), var(--pink-lighter)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+			<i class="bi bi-people-fill"></i> รายชื่อนักศึกษา
+		</h2>
+
+	</div>
+
+	<div class="card mb-4 p-4 shadow">
+		<div class="table-responsive">
+			<table class="table table-hover table-striped align-middle">
+				<thead style="background: linear-gradient(90deg, var(--pink), var(--pink-dark)); color: #fff;">
+					<tr>
+						<th>ลำดับ</th>
+						<th>รหัสนักศึกษา</th>
+						<th>ชื่อ-นามสกุล</th>
+						<th>ชั้นปี</th>
+						<th>อายุ</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>6712732126</td>
+						<td>นางสาววาสินี มาฤทธิ์</td>
+						<td>2</td>
+						<td>22</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>6712732125</td>
+						<td>นางสาววรัญญา ฉิมงาม</td>
+						<td>2</td>
+						<td>22</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>6712732104</td>
+						<td>นายฐิติพงศ์ อิงสันเทียะ</td>
+						<td>2</td>
+						<td>21</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock content %}

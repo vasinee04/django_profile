@@ -1,48 +1,87 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}แม่สูตรคูณ - VASINEE webapp{% endblock %}
-
+{% block title %}แม่สูตรคูณ - VASINEE webapp{% endblock %} 
 {% block content %}
 <div class="container">
+  <div class="card mb-4 p-4 text-center shadow hero-section">
+    <div
+      class="d-flex justify-content-center align-items-center mb-3"
+      style="min-height: 10px"
+    >
+    </div>
+    <h2
+      class="hero-title mb-2"
+      style="
+        font-size: 3rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--pink), var(--pink-lighter));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      "
+    >
+      <i class="bi bi-calculator"></i> แม่สูตรคูณ
+    </h2>
+    <p
+      class="hero-subtitle mb-0"
+      style="color: var(--pink-dark); font-size: 1.1rem"
+    >
+    </p>
+  </div>
+
   <div class="card mb-4 p-4 shadow">
     <form method="post" action="{% url 'table' %}">
       {% csrf_token %}
       <div class="mb-3">
-        <label for="numberInput" class="form-label fw-semibold" style="color:var(--pink-dark)">ป้อนตัวเลขที่ต้องการดูสูตรคูณ</label>
-        <input type="number" class="form-control" id="numberInput" name="number" min="1" required />
+        <label
+          for="numberInput"
+          class="form-label fw-semibold"
+          style="color: var(--pink-dark)"
+          >ป้อนตัวเลขที่ต้องการดูสูตรคูณ</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="numberInput"
+          name="number"
+          min="1"
+          required
+        />
       </div>
-      <button type="submit" class="btn btn-primary px-4">แสดงสูตรคูณ</button>
+      <button type="submit" class="btn btn-primary px-4">
+        <i class="bi bi-search"></i> แสดงสูตรคูณ
+      </button>
     </form>
   </div>
 
   <div class="card shadow">
     <div class="card-header bg-pink text-white">
-      <h2 class="mb-0" style="color:white">{{ message }}</h2>
+      <h2 class="mb-0" style="color: white">{{ message }}</h2>
     </div>
     <div class="card-body">
       {% if table %}
-        <div class="table-responsive">
-          <table class="table table-hover table-striped align-middle">
-            <thead class="bg-pink text-white">
-              <tr>
-                <th scope="col">แม่สูตรคูณ</th>
-                <th scope="col">ตัวคูณ</th>
-                <th scope="col">ผลลัพธ์</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for i, result in table %}
-              <tr>
-                <td>{{ number }}</td>
-                <td>{{ i }}</td>
-                <td>{{ result }}</td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
+      <div class="table-responsive">
+        <table class="table table-hover table-striped align-middle">
+          <thead class="bg-pink text-white">
+            <tr>
+              <th scope="col">แม่สูตรคูณ</th>
+              <th scope="col">ตัวคูณ</th>
+              <th scope="col">ผลลัพธ์</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i, result in table %}
+            <tr>
+              <td>{{ number }}</td>
+              <td>{{ i }}</td>
+              <td>{{ result }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
       {% else %}
-        <p class="text-muted">กรุณาป้อนตัวเลข แล้วกดแสดงสูตรคูณ</p>
+      <p class="text-muted">กรุณาป้อนตัวเลข แล้วกดแสดงสูตรคูณ</p>
       {% endif %}
     </div>
   </div>

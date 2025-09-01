@@ -1,0 +1,28 @@
+﻿[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$zYtRPYN9GRIJtqQlECczDy$Vp0XoHm+LIuYd+E42dX+kYgO8eP8ISLtn2k3nTQYhZs=",
+        "last_login": "2025-08-18T03:01:15.852Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "vasineemalit2546@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-08-18T03:00:50.961Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1z9ytfngraxfumr5h7m9o1ov5j0e0tq1",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAotIBL956BzMCMVA0kpV0Z765NutDtf-_9l4iwrSVunZY4Z3EWWpx-N4T0oLqDfId6azK1ui4zyl2RB-3y2jI9L4f7d1Cgl28NPE4-GFbWoXOW0AACkE3ofBgAcNDZGGZQQelsEZNRxA6NGv3kmMX7A__LOLY:1unq7X:kwcI_hGaUNEBWDbYnMe3p9lo-K43faT7MamOKsabvCU",
+        "expire_date": "2025-09-01T03:01:15.868Z"
+    }
+}
+]
