@@ -1,43 +1,68 @@
 
 
 <div align="center">
-	<h1>🌸 VASINEE Django Profile Webapp 🌸</h1>
+</div>
+
+<div align="center">
+	<h1>🌸 <span style="color:#e75480">VASINEE Django Profile Webapp</span> 🌸</h1>
 	<p>
 		<img src="https://img.shields.io/badge/Django-5.x-success?logo=django" alt="django"/>
 		<img src="https://img.shields.io/badge/Bootstrap-5.x-blueviolet?logo=bootstrap" alt="bootstrap"/>
 		<img src="https://img.shields.io/badge/License-Educational-lightgrey" alt="license"/>
 	</p>
-	<p>เว็บโปรไฟล์ส่วนตัว สร้างด้วย <b>Django</b> และ <b>Bootstrap 5</b> พร้อม UI สีชมพูสวยงาม รองรับภาษาไทย 🇹🇭</p>
+	<p><b>เว็บโปรไฟล์ส่วนตัว</b> สร้างด้วย <b>Django</b> และ <b>Bootstrap 5</b> พร้อม UI สีชมพูสวยงาม รองรับภาษาไทย 🇹🇭</p>
 </div>
 
 ---
 
 ## ✨ คุณสมบัติเด่น
 
-• หน้าโปรไฟล์ส่วนตัว (About) <br>
-• ตารางสูตรคูณ (Multiplication Table) <br>
-• ฟอร์มวนซ้ำ (For Loop Demo) <br>
-• แกลเลอรี่ภาพบรรยากาศชีวิตการเรียน (Index) <br>
-• ช่องทางติดต่อ (Contact) พร้อมลิงก์ Facebook, IG, Line, Email, โทรศัพท์ <br>
-• ใช้ Bootstrap 5, Bootstrap Icons, CSS ธีมชมพู <br>
-• Responsive รองรับมือถือ <br>
+<h2>✨ คุณสมบัติเด่น</h2>
+
+<ul>
+	<li>👩‍🎓 <b>หน้าโปรไฟล์ส่วนตัว (About)</b></li>
+	<li>🧮 <b>ตารางสูตรคูณ (Multiplication Table)</b></li>
+	<li>🔁 <b>ฟอร์มวนซ้ำ (For Loop Demo)</b></li>
+	<li>🖼️ <b>แกลเลอรี่ภาพบรรยากาศชีวิตการเรียน (Index)</b></li>
+	<li>📬 <b>ช่องทางติดต่อ (Contact)</b> พร้อมลิงก์ Facebook, IG, Line, Email, โทรศัพท์</li>
+	<li>🎨 ใช้ <b>Bootstrap 5</b>, Bootstrap Icons, CSS ธีมชมพู</li>
+	<li>📱 <b>Responsive</b> รองรับมือถือ</li>
+</ul>
 
 ---
 
-## 🗂️ โครงสร้างโปรเจกต์
+## 🗂️ โครงสร้างโปรเจกต์ (อัปเดตล่าสุด Sep 2025)
 
 ```text
 My_profile/
 ├── manage.py
+├── manage_dev.py
 ├── requirements.txt
+├── data.json
+├── db.sqlite3
+├── vercel.json
+├── README.md
+├── build_files.sh
 ├── My_profile/
+│   ├── __init__.py
+│   ├── asgi.py
 │   ├── settings.py
+│   ├── settings_dev.py
 │   ├── urls.py
-│   └── ...
+│   ├── wsgi.py
+│   └── __pycache__/
 ├── webpage/
-│   ├── views.py
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
 │   ├── urls.py
-│   └── ...
+│   ├── views.py
+│   ├── migrations/
+│   │   ├── __init__.py
+│   │   └── __pycache__/
+│   └── __pycache__/
 ├── templates/
 │   ├── base.html
 │   ├── index.html
@@ -47,9 +72,29 @@ My_profile/
 │   └── table.html
 ├── static/
 │   ├── css/
+│   │   └── styles.css
 │   ├── js/
+│   │   ├── datatables-simple-demo.js
+│   │   └── scripts.js
 │   └── assets/
-└── ...
+│       ├── demo/
+│       │   ├── chart-area-demo.js
+│       │   ├── chart-bar-demo.js
+│       │   ├── chart-pie-demo.js
+│       │   └── datatables-demo.js
+│       └── img/
+│           ├── B1.jpg
+│           ├── B2.jpg
+│           ├── B3.jpg
+│           ├── B4.jpg
+│           ├── error-404-monochrome.svg
+│           ├── ui10.png
+│           └── ui11.png
+└── env/  # Python virtual environment (ไม่ต้อง commit ลง git)
+	├── pyvenv.cfg
+	├── Include/
+	├── Lib/
+	└── Scripts/
 ```
 
 ---
