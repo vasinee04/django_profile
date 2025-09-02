@@ -1,4 +1,6 @@
+
 from django.shortcuts import render
+from . import models
 
 # Create your views here.
 
@@ -6,17 +8,11 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
-
 def about(request):
     return render(request, 'about.html')
 
-
 def contact(request):
     return render(request, 'contact.html')
-
-
-def student_view(request):
-    return render(request, 'student.html')
 
 
 def for_view(request):
@@ -45,3 +41,20 @@ def table_view(request):
         context['number'] = None
 
     return render(request, 'table.html', context)
+
+def student(request):
+    context = {}
+    context['title'] = "รายชื่อนักศึกษา"
+    students = models.Student.objects.all()
+    context['students'] = students
+
+    return render(request, 'student.html', context)
+
+def subjects(request):
+    context = {}
+    context['title'] = "รายวิชา"
+
+    subjects = models.Subjects.objects.all()
+    context['subjects'] = subjects
+
+    return render(request, 'subject.html', context)
