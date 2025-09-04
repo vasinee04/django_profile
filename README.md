@@ -23,10 +23,12 @@
 ## ✨ คุณสมบัติเด่น
 
 <ul>
-	<li>👩‍🎓 <b>หน้าโปรไฟล์ส่วนตัว (About)</b></li>
-	<li>🧮 <b>ตารางสูตรคูณ (Multiplication Table)</b></li>
-	<li>🔁 <b>ฟอร์มวนซ้ำ (For Loop Demo)</b></li>
 	<li>🖼️ <b>แกลเลอรี่ภาพบรรยากาศชีวิตการเรียน (Index)</b></li>
+	<li>🔁 <b>ฟอร์มวนซ้ำ (For Loop Demo)</b></li>
+	<li>🧮 <b>ตารางสูตรคูณ (Multiplication Table)</b></li>
+	<li>📅 <b>ฟอร์มรายชื่อนักศึกษา (Student List Demo)</b></li>
+	<li>👥 <b>ฟอร์มรายวิชา (Subject List Demo)</b></li>
+	<li>👩‍🎓 <b>หน้าโปรไฟล์ส่วนตัว (About)</b></li>
 	<li>📬 <b>ช่องทางติดต่อ (Contact)</b> พร้อมลิงก์ Facebook, IG, Line, Email, โทรศัพท์</li>
 	<li>🎨 ใช้ <b>Bootstrap 5</b>, Bootstrap Icons, CSS ธีมชมพู</li>
 	<li>📱 <b>Responsive</b> รองรับมือถือ</li>
@@ -38,6 +40,7 @@
 
 ```text
 My_profile/
+├── .gitignore
 ├── manage.py
 ├── manage_dev.py
 ├── requirements.txt
@@ -93,9 +96,11 @@ My_profile/
 │           ├── B3.jpg
 │           ├── B4.jpg
 │           ├── error-404-monochrome.svg
+│           └── logo1.jpg
 │           ├── ui10.png
 │           └── ui11.png
 └── env/  # Python virtual environment (ไม่ต้อง commit ลง git)
+	├── .gitignore
 	├── pyvenv.cfg
 	├── Include/
 	├── Lib/
