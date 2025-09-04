@@ -227,7 +227,7 @@ python-decouple>=3.8
 ## 📸 ตัวอย่าง Screenshots
 
 ### 🏠 Screenshots หน้าแรก (Index)
-![Index Page](static/assets/img/screenshots/screenshots_index.png)
+![Index Page](static/assets/img/screenshots_index.png)
 *หน้าแรกพร้อม Hero Section, Carousel และ Gallery รูปภาพชีวิตนักศึกษา*
 
 ---
